@@ -1,3 +1,4 @@
+![npm](https://img.shields.io/npm/v/tszip.svg)
 [![Build Status](https://travis-ci.com/briosheje/tszip.svg?branch=master)](https://travis-ci.com/briosheje/tszip)
 [![Coverage Status](https://coveralls.io/repos/github/briosheje/tszip/badge.svg?branch=master)](https://coveralls.io/github/briosheje/tszip?branch=master)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
