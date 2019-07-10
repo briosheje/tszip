@@ -1,6 +1,6 @@
 {
   "name": "tszip",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "An implementation of the `zip` python method, in typescript / javascript.",
   "keywords": [
     "typescript",
