@@ -19,20 +19,20 @@
  *  // c will be 1, then 3
  *  // d will be 2, then 4.
  *  console.log('c id', c, 'd is ', d);
- * ```
  * }
+ * ```
  * @export
  * @param {...Array<any>[]} args
  * @returns {IterableIterator<any[]>}
  */
 export function* zip(...args: Array<any>[]): IterableIterator<any[]> {
   if (args.some(r => !Array.isArray(r))) {
-    throw new Error("Zip function arguments must be instaces of arrays.");
+    throw new Error('Zip function arguments must be instaces of arrays.')
   }
   const longestArray = args.reduce((curr: number, next: any[]) => {
-    return curr = next.length > curr ? next.length : curr, curr;
-  }, 0);
+    return (curr = next.length > curr ? next.length : curr), curr
+  }, 0)
   for (let i = 0; i < longestArray; i++) {
-    yield [...args.map(_ => _[i] || null)];
+    yield [...args.map(_ => _[i] || null)]
   }
 }
