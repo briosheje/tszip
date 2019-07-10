@@ -1,6 +1,5 @@
 // Import here Polyfills if needed. Recommended core-js (npm i -D core-js)
-  // import "core-js/fn/array.find"
-  // ...
+// import "core-js/fn/array.find"
 
 /**
  * Make an iterator that aggregates elements from each of the iterables.

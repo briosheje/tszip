@@ -1,6 +1,10 @@
-const { cd, exec, echo, touch } = require("shelljs")
-const { readFileSync } = require("fs")
-const url = require("url")
+const { cd, exec, echo, touch } = require("shelljs");
+const { readFileSync } = require("fs");
+const url = require("url");
+require('dotenv').config();
+
+console.log('token is');
+console.log(process.env.GH_TOKEN);
 
 let repoUrl
 let pkg = JSON.parse(readFileSync("package.json") as any)
