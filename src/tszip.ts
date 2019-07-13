@@ -5,14 +5,14 @@
  * Make an iterator that aggregates elements from each of the iterables.
  *
  * @example
- * ```
+ * ```ts
  * // Sample usage
  * let [a,b] = [[1,2],[3,4]];
  * let zipped = [...zip(a,b)]; // or Array.from(zip(a,b));
  * console.log(zipped); // [[1,3],[2,4]]
  * ```
  * @example
- * ```
+ * ```ts
  * // Usage as iterable.
  * let [a,b] = [[1,2],[3,4]];
  * for (var [c,d] of zip(a,b)) {
@@ -27,7 +27,7 @@
  */
 export function* zip(...args: Array<any>[]): IterableIterator<any[]> {
   if (args.some(r => !Array.isArray(r))) {
-    throw new Error('Zip function arguments must be instaces of arrays.')
+    throw new Error('Zip function arguments must be instances of arrays.')
   }
   const longestArray = args.reduce((curr: number, next: any[]) => {
     return (curr = next.length > curr ? next.length : curr), curr

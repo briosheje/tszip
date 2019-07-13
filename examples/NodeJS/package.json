@@ -1,0 +1,14 @@
+{
+  "name": "zip_nodejs_example",
+  "version": "1.0.0",
+  "description": "just a zip example",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "dependencies": {
+    "tszip": "^1.0.0"
+  },
+  "author": "briosheje <uaesbriosheje@gmail.com>",
+  "license": "MIT"
+}
